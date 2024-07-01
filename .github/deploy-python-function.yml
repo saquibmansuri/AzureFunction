@@ -58,7 +58,7 @@ jobs:
 
   deploy-function2:
     runs-on: ubuntu-latest
-    needs: build
+    needs: deploy-function1
 
     steps:
       - name: Download Artifact From Build Job
